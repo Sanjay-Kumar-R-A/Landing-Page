@@ -1,0 +1,18 @@
+logo{
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+}
+:root{
+    --crystal-color:#FEFCFB;
+    --white-color:#F7F8FC;
+    --orange-color:#FA7436;
+}
+body{
+    background: var(--crystal-color);
+}
