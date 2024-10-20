@@ -88,6 +88,18 @@ nav ul li a{
     align-content: initial;
     display: inline-block;
 }
+.left{
+    font-family: "Poppins";
+    justify-content: space-between;
+
+}
+.right{
+    font-family: "Poppins";
+    align-items: center;
+    justify-content: space-between;
+    background-image: image();
+    content: url(assets/page\ 1/tourist.png);
+}
 
 
 
