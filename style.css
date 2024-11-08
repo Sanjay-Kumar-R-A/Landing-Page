@@ -64,7 +64,6 @@ nav ul{
     margin:0;
 }
 nav ul li a{
-    font-weight: ;
     font-family: "Poppins",sans-serif;
     font-size: 16px;
     color:var(--black-color);
@@ -79,7 +78,7 @@ nav ul li a{
     position: relative;
     color: var(--black-color);
     text-align: justify;
-    padding: 10%;
+    padding: 12%;
 }
 .lefth3{
     font-family: "Volkhov",sans-serif;
@@ -90,16 +89,226 @@ nav ul li a{
 }
 .left{
     font-family: "Poppins";
-    justify-content: space-between;
 
 }
 .right{
     font-family: "Poppins";
-    align-items: center;
     justify-content: space-between;
-    background-image: image();
+    position: relative;
     content: url(assets/page\ 1/tourist.png);
 }
+.bottom{
+    display: flex;
+    gap: 10px; /* Space between items */
+    align-items: flex-start; 
+    padding: 10px;
+    background-color: var(#FFFFFF);
+    margin-top: 20px;
+    padding: 10px;
+      width: fit-content;
+}
+:root {
+    --orange-color: #FA7436;
+    --white-color: #FEFCFB;
+    --crystal-color: #F7F8FC;
+    --black-color: #222222;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 16px 32px;
+    color: var(--white-color);
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    background: var(--orange-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e6612b;
+}
+
+.btnlight {
+    padding: 16px 32px;
+    border: 2px solid var(--orange-color);
+    border-radius: 5px;
+    color: var(--orange-color);
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btnlight:hover {
+    color: #e6612b;
+    border-color: #e6612b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-width: 1134px;
+    top: 0;
+    padding: 36px 0;
+    z-index: 1560;
+    background-color: var(--white-color);
+    transition: all 500ms ease;
+}
+
+.logo::after {
+    content: url(assets/page\ 1/logo.svg);
+    position: relative;
+    left: 20px;
+}
+
+.nav.logo {
+    font-family: "Volkhov", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.page1 {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+    color: var(--black-color);
+    text-align: justify;
+    padding: 12%;
+}
+
+.lefth3 {
+    font-family: "Volkhov", sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.left {
+    font-family: "Poppins", sans-serif;
+}
+
+.right {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.right::after {
+    content: url(assets/page\ 1/tourist.png);
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    margin-top: 20px;
+    width: fit-content;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bottom div {
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    color: var(--black-color);
+    text-align: center;
+}
+
+/* Additional Sections */
+.plans, .deals, .blog, .contact {
+    padding: 40px 0;
+}
+
+.plans div, .deals div, .blog div {
+    background-color: var(--white-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plans img, .deals img, .blog img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer h3 {
+    color: var(--orange-color);
+    font-family: "Volkhov", sans-serif;
+}
+
+footer p, footer a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .page1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 10%;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
 
 
 
